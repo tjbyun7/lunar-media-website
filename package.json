@@ -1,0 +1,30 @@
+{
+  "name": "lunarmedia-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "sync-assets": "mkdir -p public/site-assets/images public/site-assets/client-logos public/site-assets/brand-partnership-logos && cp -f site-assets/images/* public/site-assets/images/ && cp -f site-assets/client-logos/* public/site-assets/client-logos/ && cp -f site-assets/brand-partnership-logos/* public/site-assets/brand-partnership-logos/",
+    "predev": "npm run sync-assets",
+    "prebuild": "npm run sync-assets",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^15.5.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
