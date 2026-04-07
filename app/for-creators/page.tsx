@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Lunar Media partners with creators on management, monetization, and long-term business growth — strategic, hands-on support beyond one-off brand deals.",
 };
 
-const MAILTO = "mailto:management+w@lunarmedia.io";
+const MAILTO = "mailto:creatorintake@lunarmedia.io";
 
 export default function ForCreatorsPage() {
   return (
@@ -143,9 +143,7 @@ export default function ForCreatorsPage() {
               How we help
             </p>
             <h2 className="mt-4 text-5xl font-bold leading-[1.05] tracking-tight lg:text-6xl">
-              Beside you on
-              <br />
-              the business<span className="text-white/40">.</span>
+              Beside you on the business<span className="text-white/40">.</span>
             </h2>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/65 md:text-lg">
               Deals, ops, and packaging — with the same intent you bring to the

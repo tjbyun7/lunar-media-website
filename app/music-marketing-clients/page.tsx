@@ -10,26 +10,22 @@ export const metadata: Metadata = {
     "High-volume organic creator campaigns for music on TikTok and Instagram — volume at scale, UGC ignition, and full reporting. Case studies available on request.",
 };
 
-const MAILTO = "mailto:management+w@lunarmedia.io";
+const MAILTO = "mailto:prospects@lunarmedia.io";
 const CASE_STUDY_MAIL =
-  "mailto:management+w@lunarmedia.io?subject=Music%20marketing%20case%20study%20request";
+  "mailto:prospects@lunarmedia.io?subject=Music%20marketing%20case%20study%20request";
 
 const STEPS = [
   {
-    title: "Volume creator matching",
-    body: "We identify and brief 10–30+ creators whose content style and audience align with your sound's energy — building a roster engineered for coordinated impact.",
-  },
-  {
-    title: "Coordinated campaign launch",
-    body: "All creators post within a tight activation window, flooding TikTok and Instagram simultaneously to trigger algorithmic momentum and social proof at scale.",
+    title: "Creator matching & campaign launch",
+    body: "We identify and brief creators whose content style and audience align with your sound's energy, then activate them in a tight posting window — flooding TikTok and Instagram simultaneously to trigger algorithmic momentum.",
   },
   {
     title: "UGC ignition",
-    body: "Volume creates velocity. When dozens of creators use your sound at once, it signals the algorithm and inspires organic reposts, duets, and stitches — expanding reach beyond the campaign itself.",
+    body: "Volume creates velocity. When dozens of creators use your sound at once, the algorithm takes notice — driving organic reposts, duets, and stitches that expand reach beyond the campaign itself.",
   },
   {
     title: "Full campaign reporting",
-    body: "Receive a detailed breakdown of every video, creator performance, and UGC traction — with insights to scale your next release even further.",
+    body: "Every video, every creator, every metric — delivered in a detailed breakdown with insights to scale your next release further.",
   },
 ] as const;
 
@@ -115,8 +111,8 @@ export default function MusicMarketingClientsPage() {
                 Volume at scale<span className="text-black/35">.</span>
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-black/70 md:text-xl">
-                Fully managed, high-volume organic creator campaigns built to
-                ignite UGC. Hand us the track — we activate the ecosystem.
+                Fully managed, high-volume creator campaigns built to ignite UGC.
+                Hand us the track — we activate the ecosystem.
               </p>
             </Reveal>
 

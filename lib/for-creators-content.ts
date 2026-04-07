@@ -14,10 +14,6 @@ export const FOR_CREATORS_BELIEFS = [
     body: "Deals should fit your audience, your values, and your long-term arc — not chase the fastest check. We help you stack revenue with a plan, not a scatter of one-offs.",
   },
   {
-    title: "Growth, ops, and revenue together",
-    body: "Audience, content, partnerships, and back-office work as one system. We support you across that stack so nothing important falls through the cracks.",
-  },
-  {
     title: "Structure beats hustle alone",
     body: "The creators who last run on strategy, process, and execution — not vibes. We bring the rigor so you can keep the creative energy where it belongs.",
   },
@@ -25,40 +21,16 @@ export const FOR_CREATORS_BELIEFS = [
 
 export const FOR_CREATORS_SERVICES = [
   {
-    title: "Creator management",
-    body: "Day-to-day partnership: priorities, negotiations, and coordination so you can focus on the work only you can do.",
-  },
-  {
     title: "Brand partnerships",
     body: "Sponsorships and integrations that fit your voice — sourced, structured, and closed with your long-term brand in mind.",
   },
   {
-    title: "Monetization strategy",
-    body: "A clear view of how money can flow — deals, products, memberships, and more — sequenced in a way that matches your audience and capacity.",
+    title: "Growth strategy",
+    body: "Positioning, content direction, and audience thinking built for sustainable growth — not just short spikes.",
   },
   {
-    title: "Content & growth strategy",
-    body: "Positioning, narrative, and platform thinking that supports sustainable growth, not just short spikes.",
-  },
-  {
-    title: "Audience positioning",
-    body: "Sharpen who you’re for, what you stand for, and how that shows up everywhere you show up.",
-  },
-  {
-    title: "Business development",
-    body: "New categories, collaborations, and opportunities beyond the obvious inbound — built from your strengths and goals.",
-  },
-  {
-    title: "Partnership outreach",
-    body: "Proactive conversations with brands, platforms, and collaborators that align with where you’re headed.",
-  },
-  {
-    title: "Operational support",
-    body: "The unglamorous work that keeps campaigns and launches on the rails — timelines, deliverables, and follow-through.",
-  },
-  {
-    title: "Offers & infrastructure",
-    body: "Packaging digital products, communities, education, and other levers so your audience can support you in more than one way.",
+    title: "Business operations",
+    body: "The behind-the-scenes work that keeps everything moving. Timelines, deliverables, and new opportunities — handled.",
   },
 ] as const;
 

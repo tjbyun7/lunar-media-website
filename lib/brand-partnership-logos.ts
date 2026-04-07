@@ -34,8 +34,5 @@ export const brandPartnershipLogos = [
   {
     src: "/site-assets/brand-partnership-logos/match-group.png",
     alt: "Match Group",
-    /** White / light artwork: use a dark tile so it reads on the light section */
-    tileClass:
-      "border-neutral-800 bg-neutral-950 ring-neutral-800 hover:border-neutral-700",
   },
 ] as const;

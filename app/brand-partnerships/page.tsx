@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     "Lunar Media partners with brands on creator-led campaigns and influencer marketing — strategy, sourcing, execution, and reporting with an execution-first team.",
 };
 
-const MAILTO = "mailto:management+w@lunarmedia.io";
+const MAILTO = "mailto:prospects@lunarmedia.io";
 const INQUIRY_MAIL =
-  "mailto:management+w@lunarmedia.io?subject=Brand%20partnership%20inquiry";
+  "mailto:prospects@lunarmedia.io?subject=Brand%20partnership%20inquiry";
 
 export default function BrandPartnershipsPage() {
   return (

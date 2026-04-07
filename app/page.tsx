@@ -37,7 +37,7 @@ export default function Home() {
 
           <div className="animation-delay-400 mt-12 animate-fade-up md:mt-14">
             <a
-              href="mailto:management+w@lunarmedia.io"
+              href="mailto:prospects@lunarmedia.io"
               className="inline-flex rounded-full bg-white px-12 py-2 text-xl font-medium text-black transition-colors duration-200 hover:bg-gray-200"
             >
               Get in touch

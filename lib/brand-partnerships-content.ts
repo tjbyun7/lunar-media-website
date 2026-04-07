@@ -29,24 +29,20 @@ export const BRAND_PARTNERSHIPS_CAPABILITIES = [
 
 export const BRAND_PARTNERSHIPS_WHY = [
   {
-    title: "Execution-first",
-    body: "We’re operators. Less deck theater, more shipping — tight loops from plan to publish.",
+    title: "Results over process",
+    body: "We move fast and stay accountable. From strategy to live content, we keep things simple and on schedule.",
   },
   {
-    title: "Strategic matching",
-    body: "Creators are chosen for fit, not just follower counts. Culture and context matter as much as reach.",
+    title: "Creators that actually fit your brand",
+    body: "We match you with creators whose audience, aesthetic, and voice align with what you're building — not just whoever has the most followers.",
   },
   {
-    title: "Culturally aware",
-    body: "We work in the feed every day. Campaigns are built for how people actually talk, share, and scroll.",
+    title: "Culture-first thinking",
+    body: "We live in the same feeds your customers do. Every campaign is built around how people actually discover and share things they love.",
   },
   {
-    title: "Operator-led support",
-    body: "Direct access to people who run the work — not a black-box marketplace or rotating account roster.",
-  },
-  {
-    title: "Modern workflows",
-    body: "Systems and tooling that keep campaigns organized, fast, and repeatable as you scale.",
+    title: "A real partner, not a vendor",
+    body: "We're invested in your growth, not just your deliverables. Clear timelines, honest communication, and a team that treats your brand like their own.",
   },
 ] as const;
 
@@ -69,9 +65,8 @@ export const BRAND_PARTNERSHIPS_IDEAL = {
   intro:
     "We tend to work best with teams that want a real partner in the room — not a vendor invoice and a PDF.",
   bullets: [
-    "Brand and growth marketers launching creator-led or influencer campaigns",
+    "Brand and growth teams launching UGC or influencer campaigns",
     "Founders and lean marketing teams who need speed without sacrificing taste",
-    "Partnerships and PR leads coordinating multi-channel activations",
-    "Labels, lifestyle, and consumer brands investing seriously in social and creator channels",
+    "Labels, lifestyle, and consumer brands investing in their social and creator channels",
   ],
 } as const;
