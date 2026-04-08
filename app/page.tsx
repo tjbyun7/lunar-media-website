@@ -3,47 +3,18 @@ import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { SiteNav } from "@/components/SiteNav";
 import { VideoMarquee } from "@/components/VideoMarquee";
+import DigitalSerenityAnimatedLandingPage from "@/components/ui/digital-serenity-animated-landing-page";
 import { lunarLogoUrl, partnerLogos } from "@/lib/lunarmedia-assets";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
       {/* Section 1 — Hero */}
-      <section className="relative flex min-h-[80vh] flex-col overflow-hidden bg-black px-6 pb-16 pt-10 md:px-10 lg:px-16">
-        <div
-          className="animate-hero-orb pointer-events-none absolute -right-32 top-1/4 h-[450px] w-[825px] max-w-[120vw] -translate-y-1/4 rounded-full blur-[100px] md:right-0"
-          style={{
-            background:
-              "radial-gradient(ellipse at center, rgb(156 163 175 / 0.42) 0%, transparent 68%)",
-          }}
-          aria-hidden
-        />
-
-        <div className="relative z-10 mb-auto w-full">
+      <section className="relative flex min-h-screen flex-col overflow-hidden bg-black">
+        <div className="relative z-20 w-full shrink-0 px-6 pt-10 md:px-10 lg:px-16">
           <SiteNav variant="dark" />
         </div>
-
-        <div className="relative z-10 mt-16 flex flex-1 flex-col justify-center md:mt-24 lg:mt-0 lg:max-w-5xl">
-          <h1 className="text-5xl font-medium leading-[1.05] tracking-tight text-white lg:text-8xl">
-            <span className="block animate-fade-up">Representing the next-gen</span>
-            <span className="animation-delay-100 block animate-fade-up">
-              of creators shaping
-            </span>
-            <span className="animation-delay-200 mt-1 block animate-fade-up">
-              the future{" "}
-              <span className="text-white/45">of media.</span>
-            </span>
-          </h1>
-
-          <div className="animation-delay-400 mt-12 animate-fade-up md:mt-14">
-            <a
-              href="mailto:prospects@lunarmedia.io"
-              className="inline-flex rounded-full bg-white px-12 py-2 text-xl font-medium text-black transition-colors duration-200 hover:bg-gray-200"
-            >
-              Get in touch
-            </a>
-          </div>
-        </div>
+        <DigitalSerenityAnimatedLandingPage />
       </section>
 
       {/* Section 2 — About */}
@@ -110,12 +81,17 @@ export default function Home() {
                 efficient experience for our creator, brand, and label
                 partners.
               </p>
-              <p className="text-2xl leading-snug text-white/90">
-                Our roster has a{" "}
-                <b className="font-bold text-white">reach of 20M+</b> with
-                campaign results that redefine what clients can and should
-                expect from management partners.
-              </p>
+              <div className="space-y-6">
+                <p className="text-2xl leading-snug text-white/90">
+                  Ready to launch your next campaign?
+                </p>
+                <Link
+                  href="/brand-partnerships"
+                  className="inline-flex rounded-full bg-white px-8 py-2.5 text-lg font-medium text-black transition-colors duration-200 hover:bg-gray-200"
+                >
+                  Brand partnerships
+                </Link>
+              </div>
             </Reveal>
           </div>
 
@@ -130,8 +106,8 @@ export default function Home() {
                     <Image
                       src={partner.src}
                       alt={partner.alt}
-                      width={200}
-                      height={200}
+                      width={partner.width ?? 200}
+                      height={partner.height ?? 200}
                       className="max-h-[7.5rem] w-auto max-w-full object-contain"
                     />
                   </div>
@@ -144,42 +120,58 @@ export default function Home() {
 
       {/* Section 4 — Creators */}
       <section className="bg-white px-6 py-24 text-black md:px-10 lg:px-16">
-        <div className="mx-auto flex max-w-6xl flex-col gap-14 lg:flex-row lg:items-center lg:gap-20">
-          <div className="lg:w-3/5">
-            <Reveal>
-              <h2 className="text-5xl font-bold leading-[1.08] tracking-tight lg:text-6xl">
-                ...and help creators grow
-                <br />
-                their influence
-              </h2>
-            </Reveal>
-            <Reveal className="mt-10">
-              <p className="text-2xl leading-snug text-black/90">
-                We&apos;ve grown our own personal online brands to a sizeable
-                following, enabling us to take a creator first approach to our
-                management. As creators ourselves, we know what creators want
-                and how to get it.
-              </p>
-            </Reveal>
+        <div className="mx-auto max-w-6xl">
+          <div className="flex flex-col gap-14 lg:flex-row lg:items-center lg:gap-20">
+            <div className="lg:w-3/5">
+              <Reveal>
+                <h2 className="text-5xl font-bold leading-[1.08] tracking-tight lg:text-6xl">
+                  ...and help creators grow
+                  <br />
+                  their influence
+                </h2>
+              </Reveal>
+              <Reveal className="mt-10">
+                <p className="text-2xl leading-snug text-black/90">
+                  We&apos;ve grown our own personal online brands to a sizeable
+                  following, enabling us to take a creator first approach to our
+                  management. As creators ourselves, we know what creators want
+                  and how to get it.
+                </p>
+              </Reveal>
+            </div>
+
+            <div className="relative hidden flex-1 justify-center lg:flex">
+              <div
+                className="flex h-72 w-72 items-center justify-center rounded-full blur-2xl"
+                style={{
+                  background:
+                    "radial-gradient(circle, rgb(156 163 175 / 0.35) 0%, transparent 70%)",
+                }}
+                aria-hidden
+              />
+              <Image
+                src={lunarLogoUrl}
+                alt=""
+                width={220}
+                height={220}
+                className="absolute h-44 w-auto max-w-[min(100%,16rem)] object-contain opacity-[0.07]"
+              />
+            </div>
           </div>
 
-          <div className="relative hidden flex-1 justify-center lg:flex">
-            <div
-              className="flex h-72 w-72 items-center justify-center rounded-full blur-2xl"
-              style={{
-                background:
-                  "radial-gradient(circle, rgb(156 163 175 / 0.35) 0%, transparent 70%)",
-              }}
-              aria-hidden
-            />
-            <Image
-              src={lunarLogoUrl}
-              alt=""
-              width={220}
-              height={220}
-              className="absolute h-44 w-auto max-w-[min(100%,16rem)] object-contain opacity-[0.07]"
-            />
-          </div>
+          <Reveal className="mt-8 md:mt-10">
+            <div className="space-y-5">
+              <p className="text-2xl leading-snug text-black/90">
+                Ready to take your content career to the next level?
+              </p>
+                <Link
+                  href="/for-creators"
+                  className="inline-flex rounded-full bg-black px-8 py-2.5 text-lg font-medium text-white transition-colors duration-200 hover:bg-neutral-800"
+                >
+                  Learn More
+                </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
     </main>

@@ -10,32 +10,43 @@ export const lunarLogoUrl = `${IMG}/lunarnobg.png`;
 
 export const faviconUrl = `${IMG}/favicon.ico`;
 
-export const partnerLogos = [
+/** Optional intrinsic dimensions help `next/image` preserve aspect ratio for wide logos. */
+export type PartnerLogo = {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+};
+
+export const partnerLogos: readonly PartnerLogo[] = [
   {
-    src: `${IMG}/88rising_logo.png`,
-    alt: "88rising",
+    src: `${IMG}/landing-client-ikea.svg`,
+    alt: "IKEA",
   },
   {
-    src: `${IMG}/margiela.png`,
-    alt: "Maison Margiela",
+    src: `${IMG}/landing-client-timberland.png`,
+    alt: "Timberland",
   },
   {
-    src: `${IMG}/case.png`,
-    alt: "CASE",
+    src: `${IMG}/landing-client-arencia.webp`,
+    alt: "Arencia",
   },
   {
-    src: `${IMG}/tuzu.jpeg`,
-    alt: "Tuzu",
+    src: `${IMG}/landing-client-icon.webp`,
+    alt: "Brand partner",
   },
   {
-    src: `${IMG}/mediheal.webp`,
-    alt: "Mediheal",
+    src: `${IMG}/landing-client-media.jpg`,
+    alt: "Brand partner",
   },
   {
-    src: `${IMG}/galactic.svg`,
-    alt: "Galactic",
+    /** GIF asset; use `.gif` extension (bytes were mislabeled `.png` in source). */
+    src: `${IMG}/landing-client-forever-21.gif`,
+    alt: "Forever 21",
+    width: 240,
+    height: 240,
   },
-] as const;
+];
 
 /** Hosted on production; swap to local `/site-assets/videos/…` if you add files + sync */
 export const creatorVideoUrls = [
