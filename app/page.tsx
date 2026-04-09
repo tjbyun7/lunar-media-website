@@ -4,11 +4,12 @@ import { Reveal } from "@/components/Reveal";
 import { SiteNav } from "@/components/SiteNav";
 import { VideoMarquee } from "@/components/VideoMarquee";
 import DigitalSerenityAnimatedLandingPage from "@/components/ui/digital-serenity-animated-landing-page";
+import { MeshBackgroundSvg } from "@/components/ui/mesh-background-svg";
 import { lunarLogoUrl, partnerLogos } from "@/lib/lunarmedia-assets";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-neutral-950 text-white">
       {/* Section 1 — Hero */}
       <section className="relative flex min-h-screen flex-col overflow-hidden bg-black">
         <div className="relative z-20 w-full shrink-0 px-6 pt-10 md:px-10 lg:px-16">
@@ -18,8 +19,9 @@ export default function Home() {
       </section>
 
       {/* Section 2 — About */}
-      <section className="min-h-screen bg-white px-6 pb-24 pt-20 text-black md:px-10 lg:px-16">
-        <div className="mx-auto max-w-6xl">
+      <section className="relative min-h-screen overflow-hidden bg-white px-6 pb-24 pt-20 text-black md:px-10 lg:px-16">
+        <MeshBackgroundSvg variant="light" idPrefix="about" />
+        <div className="relative z-10 mx-auto max-w-6xl">
           <Reveal>
             <h2 className="text-5xl font-bold leading-[1.08] tracking-tight lg:text-6xl">
               Where technology meets talent
@@ -61,14 +63,15 @@ export default function Home() {
           </Reveal>
         </div>
 
-        <div className="mt-16 md:mt-20">
+        <div className="relative z-10 mt-16 md:mt-20">
           <VideoMarquee />
         </div>
       </section>
 
       {/* Section 3 — Brands / AI */}
-      <section className="relative z-10 -mt-32 bg-black px-6 py-40 text-white md:px-10 lg:px-16">
-        <div className="mx-auto flex max-w-6xl flex-col gap-16 lg:flex-row lg:items-start lg:gap-20">
+      <section className="relative z-10 -mt-32 overflow-hidden bg-black px-6 py-40 text-white md:px-10 lg:px-16">
+        <MeshBackgroundSvg variant="dark" idPrefix="brands" />
+        <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-16 lg:flex-row lg:items-start lg:gap-20">
           <div className="lg:w-2/5 lg:shrink-0">
             <Reveal>
               <h2 className="text-5xl font-bold leading-[1.08] tracking-tight lg:text-6xl">
@@ -119,8 +122,9 @@ export default function Home() {
       </section>
 
       {/* Section 4 — Creators */}
-      <section className="bg-white px-6 py-24 text-black md:px-10 lg:px-16">
-        <div className="mx-auto max-w-6xl">
+      <section className="relative overflow-hidden bg-white px-6 py-24 text-black md:px-10 lg:px-16">
+        <MeshBackgroundSvg variant="light" idPrefix="creators" />
+        <div className="relative z-10 mx-auto max-w-6xl">
           <div className="flex flex-col gap-14 lg:flex-row lg:items-center lg:gap-20">
             <div className="lg:w-3/5">
               <Reveal>

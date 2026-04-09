@@ -1,13 +1,14 @@
 "use client";
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import { MeshBackgroundSvg } from "@/components/ui/mesh-background-svg";
 
 type Ripple = { id: number; x: number; y: number };
 
 const MAILTO = "mailto:prospects@lunarmedia.io";
 
 /**
- * Animated hero shell: grid, mouse glow, ripples, word stagger, floating dots, corners.
+ * Animated hero shell: grid, mouse glow, ripples, word stagger, floating dots.
  * Copy and colors match the Lunar Media homepage hero (see app/page.tsx).
  */
 export default function DigitalSerenityAnimatedLandingPage() {
@@ -130,136 +131,7 @@ export default function DigitalSerenityAnimatedLandingPage() {
       id="digital-serenity-root"
       className="relative flex min-h-0 flex-1 flex-col overflow-hidden bg-black font-sans text-white"
     >
-      <svg
-        className="pointer-events-none absolute inset-0 h-full w-full"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden
-      >
-        <defs>
-          <pattern
-            id="gridLunarResponsive"
-            width="60"
-            height="60"
-            patternUnits="userSpaceOnUse"
-          >
-            <path
-              d="M 60 0 L 0 0 0 60"
-              fill="none"
-              stroke="rgb(156 163 175 / 0.12)"
-              strokeWidth="0.5"
-            />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#gridLunarResponsive)" />
-        <line
-          x1="0"
-          y1="20%"
-          x2="100%"
-          y2="20%"
-          className="ds-grid-line"
-          style={{ animationDelay: "0.5s" }}
-        />
-        <line
-          x1="0"
-          y1="80%"
-          x2="100%"
-          y2="80%"
-          className="ds-grid-line"
-          style={{ animationDelay: "1s" }}
-        />
-        <line
-          x1="20%"
-          y1="0"
-          x2="20%"
-          y2="100%"
-          className="ds-grid-line"
-          style={{ animationDelay: "1.5s" }}
-        />
-        <line
-          x1="80%"
-          y1="0"
-          x2="80%"
-          y2="100%"
-          className="ds-grid-line"
-          style={{ animationDelay: "2s" }}
-        />
-        <line
-          x1="50%"
-          y1="0"
-          x2="50%"
-          y2="100%"
-          className="ds-grid-line"
-          style={{ animationDelay: "2.5s", opacity: 0.05 }}
-        />
-        <line
-          x1="0"
-          y1="50%"
-          x2="100%"
-          y2="50%"
-          className="ds-grid-line"
-          style={{ animationDelay: "3s", opacity: 0.05 }}
-        />
-        <circle
-          cx="20%"
-          cy="20%"
-          r="2"
-          className="ds-detail-dot"
-          style={{ animationDelay: "3s" }}
-        />
-        <circle
-          cx="80%"
-          cy="20%"
-          r="2"
-          className="ds-detail-dot"
-          style={{ animationDelay: "3.2s" }}
-        />
-        <circle
-          cx="20%"
-          cy="80%"
-          r="2"
-          className="ds-detail-dot"
-          style={{ animationDelay: "3.4s" }}
-        />
-        <circle
-          cx="80%"
-          cy="80%"
-          r="2"
-          className="ds-detail-dot"
-          style={{ animationDelay: "3.6s" }}
-        />
-        <circle
-          cx="50%"
-          cy="50%"
-          r="1.5"
-          className="ds-detail-dot"
-          style={{ animationDelay: "4s" }}
-        />
-      </svg>
-
-      <div
-        className="corner-element-animate absolute left-4 top-4 sm:left-6 sm:top-6 md:left-8 md:top-8"
-        style={{ animationDelay: "4s" }}
-      >
-        <div className="absolute left-0 top-0 h-2 w-2 rounded-full bg-white/30 opacity-30" />
-      </div>
-      <div
-        className="corner-element-animate absolute right-4 top-4 sm:right-6 sm:top-6 md:right-8 md:top-8"
-        style={{ animationDelay: "4.2s" }}
-      >
-        <div className="absolute right-0 top-0 h-2 w-2 rounded-full bg-white/30 opacity-30" />
-      </div>
-      <div
-        className="corner-element-animate absolute bottom-4 left-4 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8"
-        style={{ animationDelay: "4.4s" }}
-      >
-        <div className="absolute bottom-0 left-0 h-2 w-2 rounded-full bg-white/30 opacity-30" />
-      </div>
-      <div
-        className="corner-element-animate absolute bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8"
-        style={{ animationDelay: "4.6s" }}
-      >
-        <div className="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-white/30 opacity-30" />
-      </div>
+      <MeshBackgroundSvg variant="dark" idPrefix="hero" />
 
       <div
         className="floating-element-animate"

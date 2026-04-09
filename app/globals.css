@@ -181,19 +181,51 @@ line.ds-grid-line {
   animation: ds-grid-draw 2s ease-out forwards;
 }
 
+@keyframes ds-grid-draw-light {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0.1;
+  }
+}
+
+line.ds-grid-line-light {
+  stroke: rgb(15 23 42 / 0.22);
+  stroke-width: 0.5;
+  opacity: 0;
+  stroke-dasharray: 5 5;
+  stroke-dashoffset: 1000;
+  animation: ds-grid-draw-light 2s ease-out forwards;
+}
+
 circle.ds-detail-dot {
   fill: rgb(229 231 235 / 0.85);
   opacity: 0;
   animation: ds-pulse-glow 3s ease-in-out infinite;
 }
 
-#digital-serenity-root .corner-element-animate {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgb(255 255 255 / 0.2);
+@keyframes ds-pulse-glow-light {
+  0%,
+  100% {
+    opacity: 0.08;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.22;
+    transform: scale(1.08);
+  }
+}
+
+circle.ds-detail-dot-light {
+  fill: rgb(15 23 42 / 0.35);
   opacity: 0;
-  animation: ds-word-appear 1s ease-out forwards;
+  animation: ds-pulse-glow-light 3s ease-in-out infinite;
 }
 
 #digital-serenity-root .text-decoration-animate {

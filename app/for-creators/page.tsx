@@ -16,8 +16,6 @@ export const metadata: Metadata = {
     "Lunar Media partners with creators on management, monetization, and long-term business growth — strategic, hands-on support beyond one-off brand deals.",
 };
 
-const MAILTO = "mailto:creatorintake@lunarmedia.io";
-
 export default function ForCreatorsPage() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -249,14 +247,8 @@ export default function ForCreatorsPage() {
             something that lasts — we&apos;d love to hear what you&apos;re
             working on.
           </p>
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
+          <div className="mt-10 flex justify-center">
             <ContactUsButton className="inline-flex rounded-full bg-white px-12 py-3.5 text-lg font-medium text-black transition-colors hover:bg-gray-200" />
-            <a
-              href={MAILTO}
-              className="text-base font-medium text-white/80 underline-offset-4 transition-colors hover:text-white hover:underline"
-            >
-              Email us directly
-            </a>
           </div>
         </Reveal>
       </section>
